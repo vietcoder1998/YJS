@@ -1,0 +1,39 @@
+.left-bar {
+  width: 200px;
+  min-height: 800px;
+  overflow-y: scroll;
+  background-color: rgb(56, 56, 56);
+
+  ul {
+    li {
+      line-height: 50px;
+      padding: 0px 10px;
+      color: rgb(183, 192, 205);
+
+      &:hover {
+        background-color: rgb(119, 119, 119);
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

@@ -1,0 +1,130 @@
+@import "../../../sass/variable";
+.header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+
+  .search_box_container {
+    position: absolute;
+    left: 25%;
+  }
+
+  .logo {
+    position: relative;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .direct-page {
+    position: absolute;
+    left: 20%;
+
+    a {
+      color: black;
+      height: 100%;
+      padding: 20px;
+      font-size: 0.93rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Function Link
+  .function {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0px;
+
+    // MenuProfile
+    .label-function {
+      padding: 20px;
+      font-size: 20px;
+      position: relative;
+      width: auto;
+      color: gray;
+      font-family: IBMPlexSanLights;
+
+      i {
+        font-size: 20px;
+        :hover{
+          color: bisque;
+        }
+      }
+
+      .menu {
+        position: absolute;
+        bottom: -121px;
+        width: auto;
+        left: -40px;
+        background-color: #ffffff;
+        margin: 10px 0px;
+        padding: 10px 0px;
+        border: solid rgba(128, 128, 128, 0.421) 1px;
+        z-index: 8;
+        li {
+          width: 120px;
+          height: 30px;
+          padding: 5px 10px;
+          font-size: $font_size_medium;
+          &:hover {
+            cursor: pointer;
+            color: white;
+            background: rgba(78, 226, 246, 0.986);
+
+            a {
+              color: white;
+            }
+          }
+
+          a {
+            color: black;
+            &:hover {
+              color: white !important;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    #borderLeft {
+      border-left: 2px solid gray;
+      position: absolute;
+      height: 30px;
+      top: 20px;
+      right: 0px;
+    }
+
+    // Login Logout Register
+    .label-login {
+      font-size: 15px;
+      a {
+        line-height: 60px;
+        padding: 5px 5px;
+        color: black;
+        font-size: 0.9pc;
+      }
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+  #profile-function {
+    display: none;
+  }
+
+  .function{
+    margin-right: 60px;
+  }
+}

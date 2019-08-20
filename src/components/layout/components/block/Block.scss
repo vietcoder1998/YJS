@@ -1,0 +1,42 @@
+@import "../../../sass/variable";
+
+.box-block {
+  background: #fff;
+  margin-bottom: 15px;
+  border: solid $color_border 1px;
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 30px;
+  p {
+    margin: 0px !important;
+    
+  }
+
+  pre{
+    font-size: 0.7 rem !important;
+  }
+
+  .block-header {
+    padding: 20px 30px;
+    border-bottom: solid #e1e1e1 1px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: IBMPlexSanLights;
+    p {
+      margin: 0 0;
+    }
+  }
+
+  .effect {
+    transition: opacity 2s;
+  }
+
+  .effect .complete {
+    opacity: 1;
+  }
+
+  .anticon {
+    top: 50%;
+    right: 50%;
+  }
+}
