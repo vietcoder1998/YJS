@@ -1,0 +1,38 @@
+.login-content {
+  display: flex;
+  width: 100%;
+  text-align: center;
+
+  .title{
+    padding: 30px 0px !important;
+  }
+  
+  .login-form {
+    margin: 50px 5px;
+    height: 450px;
+    background-color: white;
+    max-width: 400px;
+
+    .nomal {
+      font-weight: 500;
+      margin: 30px 0px;
+    }
+
+    .forgot-password {
+      a {
+        position: absolute;
+        right: 0px;
+      }
+    }
+
+    p {
+      padding: 0px 20px;
+    }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

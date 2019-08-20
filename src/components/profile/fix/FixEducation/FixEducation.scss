@@ -1,0 +1,36 @@
+.education {
+  p {
+    font-weight: 800;
+    margin-bottom: 0px;
+  }
+
+  .input_outside {
+    height: 40px;
+    width: 100%;
+  }
+
+  input {
+    &::placeholder {
+      padding-right: 20px;
+    }
+  }
+
+  .time {
+    display: flex;
+
+    .properties {
+      width: 50%;
+      margin: 10px;
+      min-width: 185px;
+    }
+  }
+
+  .education-content {
+    padding: 10px 0px;
+  }
+
+  .anticon{
+    right: 10px;
+  }
+  
+}

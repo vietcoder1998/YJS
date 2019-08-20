@@ -1,0 +1,38 @@
+.register {
+  height: 650px;
+  width: 100%;
+  margin: 50px 0px;
+  background-color: white;
+  display: block;
+
+  .normal {
+    font-weight: 500;
+    margin: 10px 0px;
+    padding: 0px 20px;
+  }
+
+  .forgot-password {
+    float: right;
+  }
+
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .name {
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .row-name{
+    display: inline-flex;
+    padding: 10px;
+  }
+
+  .or {
+    text-align: center;
+  }
+}

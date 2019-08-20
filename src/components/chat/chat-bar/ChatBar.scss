@@ -1,0 +1,64 @@
+.chat-bar {
+  height: 100%;
+  background-color: white;
+
+  header {
+    padding: 5px;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border-color: gainsboro;
+    }
+
+    h4{
+        margin: 0 10px;
+        line-height: 40px;
+    }
+  }
+
+  .search-chat-bar {
+    padding: 5px 10px;
+  }
+
+  .content-chat-bar {
+    height: 500px;
+    overflow-y: auto;
+
+    ul {
+      li {
+        padding: 0px;
+        &:hover {
+          cursor: pointer;
+        }
+
+        .item-chat-user {
+          display: flex;
+          padding: 5px;
+          margin: 5px;
+          border-radius: 15px;
+        //   background-color: whitesmoke;
+
+          &:hover {
+            box-shadow: rgba(46, 46, 46, 0.2) 0px 0px 5px 0px;
+          }
+
+          .img-content {
+            width: 25%;
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+          }
+
+          .msg-content {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

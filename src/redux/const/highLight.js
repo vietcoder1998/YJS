@@ -1,0 +1,1 @@
+export const GET_HIGH_LIGHT_JOB = 'GET_HIGH_LIGHT_JOB';

@@ -1,0 +1,1 @@
+export let loginUserDto = (username, password) =>{ return {username, password}};

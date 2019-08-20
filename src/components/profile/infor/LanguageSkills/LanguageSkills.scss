@@ -1,0 +1,18 @@
+.language-skills {
+  padding: 10px 50px;
+  height: auto;
+  border-bottom: solid rgba(128, 128, 128, 0.301) 1px;
+
+  label {
+    padding: 0px 10px;
+    margin: 10px 0px !important;
+  }
+
+  &:hover {
+    box-shadow: rgba(71, 71, 71, 0.2) 0px 0px 5px 0px;
+  }
+
+  #language-name {
+    font-weight: 600;
+  }
+}

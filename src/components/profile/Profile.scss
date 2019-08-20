@@ -1,0 +1,48 @@
+.profile {
+  width: auto;
+  transition: 0.3s;
+  padding: 10px 0px;
+  .candicate-info{
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  span {
+    cursor: pointer;
+  }
+
+  .icon-fix {
+    position: relative;
+    float: right;
+    top: -50px;
+    right: 30px;
+    padding: 5px 10px;
+    font-size: 16px;
+
+    &:hover{
+      span{
+        font-size: 18;
+        transition: 0.3s;
+      }
+    }
+
+    span{
+      &:hover{
+        font-size: 18;
+        cursor: pointer;
+      }
+    }
+ 
+  }
+
+  i{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .fa-plus{
+    color: rgb(0, 195, 255)
+  }
+}

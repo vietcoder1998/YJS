@@ -1,0 +1,60 @@
+.person-info {
+  display: flex;
+
+  .input_outside {
+    width: 100%;
+    height: 30px;
+  }
+
+  p {
+    font-weight: 600;
+    padding-top: 10px;
+  }
+
+  .person-avatar {
+    img {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+    }
+  }
+
+  h6 {
+    font-weight: 600 !important;
+  }
+}
+
+.location {
+  height: auto;
+  margin-top: 30px;
+  textarea {
+    width: 100%;
+    min-height: 70px !important;
+  }
+}
+
+.person-content {
+  padding: 0px 10px;
+  .location-devide {
+    color: blueviolet;
+    background-color: white;
+    margin: 5px 0px;
+    border: solid blueviolet 1px;
+    border-radius: 3px;
+    font-weight: 500;
+    &:hover {
+      color: white;
+      background-color: blueviolet;
+    }
+  }
+
+  .map-container{
+    width: 50vw;
+    position: relative;
+  }
+
+  .anticon{
+    right: 10px;
+  }
+}
+

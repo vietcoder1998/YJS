@@ -1,0 +1,77 @@
+.chat-interface {
+  display: block;
+  height: 100%;
+  background-color: white;
+
+  header {
+    padding: 5px;
+
+    h4 {
+      margin: 0 10px;
+      line-height: 40px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-color: gainsboro;
+      }
+    }
+  }
+
+  .msg-properties {
+    padding-left: 10px;
+    height: 500px;
+    overflow-y: auto;
+
+    .list-msg {
+      padding-right: 20px;
+      margin-right: 10px;
+
+      .p1-content {
+        position: relative;
+        margin-bottom: 10px;
+
+        .avatar-p1 {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          bottom: 10px;
+          left: 5px;
+          transition: 0.5s;
+
+          img {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+          }
+        }
+
+        .msg {
+          margin-left: 30px;
+          height: auto;
+          padding: 10px 0px;
+
+          .s-msg-p1 {
+            padding: 5px 10px;
+            line-height: 30px;
+            margin: 5px;
+            border-radius: 15px;
+            background-color: rgb(25, 218, 25);
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+
+  .input-msg {
+    padding: 5px 0px;
+    display: flex;
+
+    .more-state {
+      i {
+        padding: 0px 5px;
+      }
+    }
+  }
+}

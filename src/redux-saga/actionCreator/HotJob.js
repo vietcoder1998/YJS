@@ -1,0 +1,1 @@
+export const GET_HOT_JOB_DATA = 'GET_HOT_JOB_DATA'

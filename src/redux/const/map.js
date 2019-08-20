@@ -1,0 +1,1 @@
+export const SET_MAP_STATE = 'SET_MAP_STATE';

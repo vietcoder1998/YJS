@@ -1,0 +1,73 @@
+@import "../sass/variable";
+
+
+.history-content {
+  height: auto;
+  padding: 10px 5px;
+  background-color: white;
+  
+  .history-job {
+    .job-detail {
+      height: auto;
+      min-height: 180px;
+      margin: 5px;
+      display: flex;
+      padding: 5px;
+      &:hover {
+        background-color: azure;
+      }
+
+      li{
+        :hover{
+          cursor: pointer;
+        }
+      }
+
+      .image-job {
+        position: relative;
+        width: 95px;
+        padding: 5px;
+
+        .logo-company {
+          position: relative;
+          padding: 2px;
+          height: 85px;
+          width: 85px;
+          border: solid $color_border 2px;
+        }
+
+        .job-state {
+          position: absolute;
+          top: 60px;
+          left: 60px;
+        }
+      }
+
+      .content-job {
+        padding: 5px;
+        width: calc(100% -115px);
+        min-height: 200px;
+
+        p {
+          font-size: 1rem;
+          font-family: $font_base;
+          margin-bottom: 10px;
+          font-weight: 500;
+
+          a {
+            color: black;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      li {
+        list-style: none;
+        padding: 5px 2px;
+      }
+    }
+  }
+}

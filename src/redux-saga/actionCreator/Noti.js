@@ -1,0 +1,1 @@
+export const GET_NOTI_INFO_DATA = 'GET_NOTI_INFO_DATA'

@@ -1,0 +1,103 @@
+@import "../../../sass/variable";
+
+.ability {
+  .list-ability {
+    margin-bottom: 20px;
+    .tag-ablity {
+      width: auto;
+      background-color: #898989;
+      padding: 5px 30px;
+      color: whitesmoke;
+      border-radius: 3px;
+      margin-right: 10px;
+
+      i {
+        position: relative;
+        top: -3px;
+        right: -32px;
+      }
+    }
+  }
+
+  input {
+    height: 40px;
+    width: 320px;
+    margin-right: 5px;
+    &::placeholder {
+      padding-left: 10px;
+    }
+  }
+
+  .btn-add {
+    position: relative;
+    width: 40px !important;
+    height: 40px;
+    border: solid #29b5e3 2px;
+
+    i {
+      color: #29b5e3 !important;
+    }
+    background-color: #ffffff;
+
+    font-weight: 800;
+
+    &:hover {
+      i {
+        color: #ffffff !important;
+      }
+      background-color: #29b5e3;
+    }
+  }
+
+  .list-skills {
+    ul {
+      margin: 10px 0px;
+    }
+
+    .input-area{
+      border: solid $color_border 1px;
+      height: 60px;
+      overflow-y: auto;
+
+      .input-area-place{
+        display: absolute;
+        top: 10px;
+        z-index: -5;
+      }
+    }
+
+    .data-api{
+      overflow-y: auto;
+      height: 300px;
+      width: 100%;
+      /* width */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      border: solid green 1px;
+    }
+
+    label {
+      cursor: pointer;
+      border: solid $color_border 1px;
+      padding: 0px 5px;
+      font-weight: 500;
+    }
+  }
+}

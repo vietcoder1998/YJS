@@ -1,0 +1,69 @@
+.container{
+  margin: none;
+}
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  line-height: 50px;
+  ul {
+    li {
+      a{
+        color: white;
+        &:hover{
+          text-decoration: underline;
+          transition: 0.2s;
+        }
+      }
+      height: 50px;
+      padding: 5px;
+    }
+  }
+ 
+  .content-footer {
+    margin: 0px;
+    background-color: #3686c7 !important;
+    color: white;
+    width: 100%;
+
+    .rule {
+      margin: none;
+      border-right: solid #67a7dc 2px;
+      border-left: solid #67a7dc 2px;
+
+    }
+
+    .contact {
+      p {
+        margin: 0px;
+      }
+    }
+
+    .app {
+      min-width: 200px;
+      padding: 0px 20px;
+      border-left: solid #67a7dc 2px;
+      position: relative;
+      .market-chlay {
+        width: 100%;
+        background-color: #296ea7;
+        border-radius: 15px;
+        padding: 20px 30px;
+      }
+    }
+  }
+
+  .copy-right {
+    height: 100%;
+    position: relative;
+    height: 60px;
+    background-color: #296ea7;
+    color: white;
+    label {
+      position: absolute;
+      width: 200px;
+      right: calc((100% - 200px) / 2);
+    }
+  }
+}

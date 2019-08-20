@@ -1,0 +1,14 @@
+{
+    "validate": "Thiếu trường thông tin",
+    "appliedJobSuccess": "Bạn đã ứng tuyển thành công",
+    "success": "Thành công",
+    "unSuccess": "Yêu cầu thất bại",
+    "loginSuccess": "Đăng nhập thành công",
+    "loginUnsuccess": "Đăng nhập thất bại",
+    "logOut": "Bạn đã đăng xuất khỏi Works.vn",
+    "findJobStateSuccess": "Đã thay đổi trạng thái tìm việc thành công",
+    "unSuccessUpdate": "Cập nhật thất bại",
+    "updateSuccess": "Cập nhật thành công",
+    "failLogin": "Sai mật khẩu hoặc tài khoản",
+    "failRequirement": "Bạn đã ứng tuyển công việc này"
+}

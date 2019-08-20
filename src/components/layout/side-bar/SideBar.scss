@@ -1,0 +1,99 @@
+// icon menu
+//background-sidebar
+.background-sidebar {
+  overflow: none;
+  position: fixed;
+  z-index: 4;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.496);
+  overflow: none;
+  // display: none;
+}
+//side-bar
+.sidebar {
+  width: 0px;
+  height: 0px;
+}
+
+// side-bar_right
+.side-bar_right {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  background-color: whitesmoke;
+  transition: 300ms;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+
+  .close-sidebar {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    width: 100%;
+    color: rgb(14, 14, 14);
+    text-align: right;
+
+    i {
+      :hover {
+        cursor: pointer;
+      }
+      z-index: 2;
+      right: 10%;
+      font-weight: 200;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .cover-img {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 45vw;
+
+    .avatar {
+      position: absolute;
+      top: 5vw;
+      left: 5vw;
+      width: 30vw;
+      height: 30vw;
+
+      .avatar-image {
+        border-radius: 50%;
+        width: 25vw;
+        height: 25vw;
+        border: solid rgb(0, 195, 255) 1px;
+      }
+    }
+  }
+
+  .content-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 10%;
+    color: black;
+    padding: 10px;
+
+    ul {
+      li {
+        font-weight: 600;
+        padding: 10px;
+        font-size: 16px;
+        font-family: IBMPlexSanLights;
+
+        i {
+          width: 20px;
+          height: 20px;
+        }
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}

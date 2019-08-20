@@ -1,0 +1,82 @@
+.all-noti-content {
+  background-color: white;
+  padding: 25px 10px;
+
+  .noti-header {
+    padding: 0px 10px;
+
+    h6 {
+      margin: 10px 0px;
+    }
+  }
+
+  .list-content {
+    padding: 5px 10px;
+    height: auto;
+    overflow-y: auto;
+    margin-bottom: 5px;
+
+    .li-noti {
+      display: flex;
+      width: 100%;
+      background-color: white;
+      padding: 5px 10px;
+
+      .data-noti {
+        width: 100%;
+        &:hover {
+          cursor: pointer;
+        }
+
+        li{
+          padding: 2px;
+        }
+      }
+      .set-noti {
+        float: right;
+
+        i {
+          margin: 5px;
+        }
+      }
+    }
+
+    .seen {
+      background-color: azure;
+      &:hover {
+        background: rgb(206, 255, 255);
+      }
+    }
+
+    .not-seen {
+      background-color: rgb(255, 255, 255);
+      &:hover {
+        background: rgba(185, 185, 185, 0.143);
+      }
+    }
+
+    img {
+      width: 75px;
+      height: 75px;
+      margin: 0px 10px;
+    }
+  }
+
+  .pagination-result {
+    text-align: center;
+    li {
+      padding: 0px;
+      width: 5px;
+    }
+  
+    .ant-pagination {
+      margin: 10px 0px;
+    }
+  
+    .ant-pagination-item-active {
+      background-color: rgb(0, 132, 255);
+      color: white !important;
+    }
+  }
+  
+}

@@ -1,0 +1,1 @@
+export const GET_HIGH_LIGHT_DATA = 'GET_HIGH_LIGHT_DATA'
