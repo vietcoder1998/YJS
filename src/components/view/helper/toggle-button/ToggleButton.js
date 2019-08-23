@@ -1,6 +1,6 @@
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import './ToggleButton.scss';
-import { connect } from './node_modules/react-redux';
+import { connect } from 'react-redux';
 import { _requestToServer } from '../../../../service/exec';
 import { isLookingFobJobState } from '../../../../service/api/private.api';
 import { PUT } from '../../../../const/method';

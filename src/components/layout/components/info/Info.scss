@@ -1,0 +1,76 @@
+@import "../../../sass/variable";
+
+.info-block {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  margin: 0px 0px 30px;
+  font-weight: 500;
+  border: solid $color_border 1px;
+  padding: 20px;
+
+  &:hover {
+    box-shadow: rgba(71, 71, 71, 0.2) 0px 0px 5px 0px;
+  }
+
+  i {
+    color: #ffc741;
+  }
+
+  .block-header {
+    padding: 0px 10px;
+    font-weight: 600;
+    font-size: $font_size_medium;
+    display: flex;
+    margin-bottom: 20px;
+
+    .header-content {
+      display: flex;
+      font-size: 1.5rem;
+      p {
+        margin-bottom: 0px;
+      }
+
+      .break-cumb {
+        position: absolute;
+        font-size: 1rem;
+        background-color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+  label {
+    margin: 5px 15px !important;
+    width: 90px;
+    text-align: left;
+  }
+
+  span {
+    margin: 2px;
+  }
+
+  .wrapper {
+    padding: 20px 50px;
+    height: auto;
+    min-height: 200px;
+
+    .fa-pen {
+      float: right;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -60px;
+      right: 40px;
+      cursor: pointer;
+    }
+
+    .holder-button {
+      margin-top: 20px;
+      position: relative;
+      height: 40px;
+    }
+  }
+}

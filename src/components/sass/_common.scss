@@ -367,3 +367,9 @@ h4 {
     }
   }
 }
+
+span{
+  &:hover{
+    cursor: pointer;
+  }
+}

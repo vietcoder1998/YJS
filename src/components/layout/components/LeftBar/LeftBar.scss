@@ -1,0 +1,43 @@
+.left-bar {
+  width: 200px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0px;
+  top: 60px;
+  overflow-y: scroll;
+  background-color: rgb(56, 56, 56);
+  margin: 0px !important;
+
+  ul {
+    li {
+      line-height: 50px;
+      padding: 0px 10px;
+      color: rgb(183, 192, 205);
+
+      &:hover {
+        background-color: rgb(119, 119, 119);
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

@@ -2,21 +2,15 @@ import React, { Component } from 'react';
 import './components/sass/_common.scss';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/home/Home';
-import Profile from './components/profile/Profile';
-import NotFound from './components/not-found/NotFound';
-import Login from './components/login/Login';
-import Register from './components/register/Register';
+import NotFound from './components/view/not-found/NotFound';
+import Login from './components/view/login/Login';
 import { connect } from 'react-redux';
 import { EXACT_AUTH } from './redux/const/authen';
-import ForgotPassword from './components/forgot/ForgotPassword';
-import Result from './components/result/Result';
-import JobDetail from './components/job-detail/JobDetail';
-import SaveJob from './components/save-job/SaveJob';
-import AllNoti from './components/all-noti/AllNoti';
+import ForgotPassword from './components/view/forgot/ForgotPassword';
+import Admin from './components/view/admin/Admin';
 import { CALL_DATA } from './redux-saga/actionCreator/PersonInfo';
 import  loadingLogo from './assets/image/831.gif'
-import ChatPage from './components/chat/ChatPage';
+import ChatPage from './components/view/chat/Main/ChatPage';
 
 
 class App extends Component {
@@ -33,7 +27,6 @@ class App extends Component {
     if (isAuthen) {
       this.props.callData();
     }
-
   }
 
   componentDidMount() {
@@ -77,15 +70,10 @@ class App extends Component {
       return (
         <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/profile" component={this.props.isAuthen === true ? Profile : Home} />
+            <Route exact path="/admin" component={this.props.isAuthen === true ? Admin : Login} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/register" component={Register} />
+            <Route exact path="/" component={Login} />
             <Route exact path="/forgot-password" component={ForgotPassword} />
-            <Route exact path="/result" component={Result} />
-            <Route exact path="/save-job" component={SaveJob} />
-            <Route exact path="/job-detail/:id" component={JobDetail} />
-            <Route exact path="/notifications" component={AllNoti} />
             <Route exact path="/chat" component={ChatPage} />
             <Route component={NotFound} />
           </Switch>
