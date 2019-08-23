@@ -1,13 +1,13 @@
-@import "../../sass/variable";
+@import "../../../sass/variable";
 
 .info-block {
   background: #fff;
-  margin-bottom: 15px;
-  width: auto;
-  margin-bottom: 30px;
-  min-width: 255px;
+  position: relative;
+  width: 100%;
+  margin: 0px 0px 30px;
   font-weight: 500;
   border: solid $color_border 1px;
+  padding: 20px;
 
   &:hover {
     box-shadow: rgba(71, 71, 71, 0.2) 0px 0px 5px 0px;
@@ -18,14 +18,27 @@
   }
 
   .block-header {
-    padding: 20px 30px;
-    border-bottom: solid #e1e1e1 1px;
+    padding: 0px 10px;
     font-weight: 600;
     font-size: $font_size_medium;
+    display: flex;
+    margin-bottom: 20px;
 
-    p {
-      margin: 0 0;
-      text-align: center;
+    .header-content {
+      display: flex;
+      font-size: 1.5rem;
+      p {
+        margin-bottom: 0px;
+      }
+
+      .break-cumb {
+        position: absolute;
+        font-size: 1rem;
+        background-color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 20px;
+        right: 20px;
+      }
     }
   }
 

@@ -20,14 +20,17 @@ class Block extends Component {
 
     render() {
         let { loading, fade } = this.state;
+        let {icon, describe, children} = this.props
 
         return (
             <div className='box-block'>
-                <div className="block-header">
-                    <p>{this.props.icon} {this.props.describe}</p>
+                <div className="block-header" >
+                    <p>{icon} {describe}</p>
                 </div>
-                {loading ? <div className='loading'><Icon type="loading-3-quarters" style={{ fontSize: 24 }} spin /></div > :
-                    <div className='effect' style={{ opacity: fade === true ? '0' : '1' }}>{this.props.children}</div>}
+                {loading && children ? <div className='loading'><Icon type="loading-3-quarters" style={{ fontSize: 24 }} spin /></div > :
+                    <div className='effect' style={{ opacity: fade === true ? '0' : '1' }}>
+                        {children}
+                    </div>}
             </div>
         );
     }

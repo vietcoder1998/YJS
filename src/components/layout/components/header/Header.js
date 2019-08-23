@@ -9,6 +9,7 @@ import { Tooltip, Icon } from 'antd';
 import { OPEN_SIDE_BAR } from '../../../../redux/const/sidebar.state';
 import Notification from './notification/Notification';
 import { allMsg } from '../../../../const/msg';
+import Logo from '../../../../assets/image/carouselGroup/carousel1.jpg';
 
 class Header extends Component {
   constructor(props) {
@@ -64,7 +65,7 @@ class Header extends Component {
         {show_noti ? <Notification /> : null}
         <div className="header">
           <div className="logo">
-            <Link to="/"><img width={120} height={40} src={'logo'} alt="itea-scan" /> </Link>
+            <Link to="/"><img width={120} height={40} src={Logo} alt="YJS" /> </Link>
           </div>
           <div className='direct-page'>
             <a href='/'> <Tooltip placement="bottom" title={'Home'}>Trang chủ</Tooltip></a>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Info.scss'
 import { _get } from '../../../../service/base-api';
+import { Icon } from 'antd';
 
 class Info extends Component {
     constructor(props) {
@@ -21,14 +22,26 @@ class Info extends Component {
         let api = "/api/jobGroups";
         _get(params, api);
     }
-    
+
     render() {
+
+        let { describe, breakcumb, children } = this.props;
+
         return (
             <div className='info-block'>
                 <div className="block-header">
-                    <p> {this.props.describe}</p>
+                    <div className='header-content'>
+                        <p>
+                            {describe}
+                        </p>
+
+                        {breakcumb ? <div className='break-cumb'>
+                            <Icon type='home' /> {this.props.breakcumb}
+                        </div> : null}
+                    </div>
+
                 </div>
-                {this.props.children}
+                {children}
             </div>
         );
     }

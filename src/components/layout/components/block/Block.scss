@@ -1,12 +1,11 @@
 @import "../../../sass/variable";
 
 .box-block {
-  background: #fff;
-  margin-bottom: 15px;
-  border: solid $color_border 1px;
+  border-radius: 0px 5px 0px 5px;
+  background: linear-gradient(45deg,#FFB64D,#ffcb80);
   width: 100%;
-  min-width: 300px;
-  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  
   p {
     margin: 0px !important;
     
@@ -17,8 +16,7 @@
   }
 
   .block-header {
-    padding: 20px 30px;
-    border-bottom: solid #e1e1e1 1px;
+    padding: 10px;
     font-weight: 600;
     font-size: 1.1rem;
     font-family: IBMPlexSanLights;

@@ -1,8 +1,12 @@
 .left-bar {
   width: 200px;
-  min-height: 800px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0px;
+  top: 60px;
   overflow-y: scroll;
   background-color: rgb(56, 56, 56);
+  margin: 0px !important;
 
   ul {
     li {
@@ -19,7 +23,7 @@
   }
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
 
   /* Track */
